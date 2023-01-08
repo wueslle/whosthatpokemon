@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quem é esse pokemon?</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body onload="instrucao()">
+    <main>
+      <div id="fundo">
+        <div id="modal">
+          <div id="fechar">X</div>
+        </div>
+      </div>
+      <div id="vitorias">
+        <img src="wins.png" id="winimg" />
+        <div id="contador">0</div>
+      </div>
+      <div id="box">
+        <p id="title">Quem é esse Pokémon?</p>
+        <div class="pokeposition">
+          <img src="queméessepokemon.png" id="bg" draggable="false" />
+          <div class="pokerelative">
+            <img id="poke" draggable="false" />
+          </div>
+        </div>
+
+        <input
+          type="text"
+          placeholder="Insira o nome do pokemon completo e em inglês. Ex. Bulbasaur"
+          id="palpite"
+        />
+        <div class="button" id="reset" disabled="disabled">
+          <p id="botao-text">Jogar Novamente</p>
+          <img src="images.png" draggable="false" />
+        </div>
+      </div>
+      <div id="palpites"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
