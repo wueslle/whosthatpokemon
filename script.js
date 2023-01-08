@@ -150,6 +150,7 @@ document.getElementById("reset").addEventListener("click", (event) => {
   document.getElementById("reset").setAttribute("disabled", "disabled");
   tentativas = 0;
   title.innerHTML = "Quem é esse Pokémon?";
+  dica = [];
 });
 
 document.getElementById("poke").oncontextmenu = function () {
