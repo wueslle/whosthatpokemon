@@ -89,7 +89,7 @@ const pokeCheck = () => {
 
 const pokeErro = () => {
   const erro = document.createElement("img");
-  erro.src = "pokeball.png";
+  erro.src = "assets/pokeball.png";
   erro.id = "erro";
   erro.className = `erro${tentativas}`;
   document.getElementById("palpites").appendChild(erro);

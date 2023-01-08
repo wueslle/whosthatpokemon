@@ -7,7 +7,7 @@
 body {
   padding: 0 150px 10px 0px;
   background-color: rgb(20, 20, 20);
-  background-image: url("bg.webp");
+  background-image: url("whosthatpokemon/assets/bg.webp");
   background-size: cover;
 }
 main {
