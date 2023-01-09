@@ -14,6 +14,7 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
+  padding: 10% 17% 0 10%
 }
 
 #box {
@@ -86,8 +87,9 @@ input {
 #palpites {
   width: 50px;
   height: 421px;
-  margin-top: 170px;
   position: relative;
+  bottom: 90%;
+  left: 50%;
 }
 
 #dica {
@@ -237,6 +239,12 @@ input:focus::placeholder {
 
   #box {
     margin-top: 40px;
+    position: fixed;
+    top: 14%;
+    width: 300px;
+    height: 500px;
+    left: 15%;
+
   }
   #bg {
     object-fit: cover;
@@ -263,6 +271,7 @@ input:focus::placeholder {
     margin-bottom: 1rem;
     z-index: 1;
     position: relative;
+    height: 8rem;
   }
 
   #reset {
@@ -271,11 +280,11 @@ input:focus::placeholder {
   }
 
   #palpites {
-    position: initial;
     height: auto;
-    margin-left: -30px;
-    margin-top: 19rem;
-    padding-left: -5px;
+    width: 350px;
+   margin-top: 15px;
+   left: -13px;
+   z-index: 2;
   }
 
   #erro {
@@ -301,7 +310,7 @@ input:focus::placeholder {
     margin-top: 200px;
     width: auto;
     height: auto;
-    z-index: 5555;
+    z-index: 3;
   }
 
   #winimg {
@@ -310,13 +319,28 @@ input:focus::placeholder {
   }
 
   #modal {
-    display: none;
+    position: absolute;
+    border-radius: 40px;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 4000;
+    background-color: var(--pokered);
+    opacity: 1;
+    border: 3px solid var(--pokeblue);
+    cursor: default;
+    font-family: sans-serif;
+    color: var(--pokeyellow);
+    -webkit-text-stroke: 1px var(--pokeblue);
+    font-size: 50px;
+    text-align: center;
   }
+  
 
   #contador {
     position: relative;
-    top: -222px;
-    left: 300px;
+    top: -160px;
     font-size: 40px;
   }
 }
