@@ -235,6 +235,9 @@ input:focus::placeholder {
     height: 720px;
   }
 
+  #box {
+    margin-top: 40px;
+  }
   #bg {
     object-fit: cover;
     object-position: left;
