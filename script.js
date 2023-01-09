@@ -67,19 +67,20 @@ const pokeCheck = () => {
     title.innerHTML = `É o ${
       pokedata.names.charAt(0).toUpperCase() + pokedata.names.slice(1)
     }!`;
+    mediaQuery();
   } else {
     tentativas++;
     pokeErro();
     dicas();
     if (tentativas >= 6) {
-      activateButton();
-
       document.getElementById("botao-text").innerHTML = "Jogar novamente";
       pokephoto.style.cssText = "filter: brightness(1)";
       document.getElementById("palpite").setAttribute("disabled", "disabled");
       title.innerHTML = `É o ${
         pokedata.names.charAt(0).toUpperCase() + pokedata.names.slice(1)
       }!`;
+      mediaQuery();
+      activateButton();
       vitorias = 0;
       contador.innerHTML = vitorias;
       contador.style.cssText = "right: 33%";
@@ -89,7 +90,7 @@ const pokeCheck = () => {
 
 const pokeErro = () => {
   const erro = document.createElement("img");
-  erro.src = "/assets/pokeball.png";
+  erro.src = "assets/pokeball.png";
   erro.id = "erro";
   erro.className = `erro${tentativas}`;
   document.getElementById("palpites").appendChild(erro);
@@ -149,7 +150,9 @@ document.getElementById("reset").addEventListener("click", (event) => {
     "padding: 0; width: 0; color: #fff; font-size: 0px; pointer-events: none;";
   document.getElementById("reset").setAttribute("disabled", "disabled");
   tentativas = 0;
+  mediaQuery(x);
   title.innerHTML = "Quem é esse Pokémon?";
+
   dica = [];
 });
 
@@ -163,10 +166,24 @@ const instrucao = () => {
     "position: absolute; border-radius: 40px; top: 19%; left: 33%; width: 15em; height: 10em;z-index: 4000; background-color: var(--pokeblue); opacity: 1; border: 5px solid var(--pokered);cursor: default;font-family: sans-serif; color: var(--pokeyellow); -webkit-text-stroke: 1px var(--pokeye); font-size: 32px;text-align: center;padding: 10px 10px 10px 10px;font-weight: lighter;opacity: 0.8;";
   document.getElementById(
     "modal"
-  ).textContent = `As instruções do jogo são simples: Você terá 6 chances, após o primeiro erro receberá uma dica a cada nova tentativa. Se a resposta estiver correta, o contador de vitória aumentará, caso contrário ele irá resetar. Bom jogo!`;
+  ).textContent = `As instruções do jogo são simples: Você terá 6 chances, após o primeiro erro receberá uma dica a cada nova tentativa. Se a resposta estiver correta, o contador de vitória aumentará, caso contrário ele irá resetar. Para visualizar as dicas, clique na pokebola. Bom jogo!`;
   document.getElementById("fundo").addEventListener("click", () => {
     document.getElementById("fundo").style.cssText = "display: none";
   });
 };
 
+function mediaQuery(x = window.matchMedia("(orientation: portrait)")) {
+  if (x.matches) {
+    document.getElementById("reset").style.cssText =
+      "opacity: 1; pointer-events: none; padding: 8px 20px 22px 50px; width: 112.625px; font-size: 15px; background-color: #db2f2c;";
+    document.getElementById("reset").setAttribute("disabled", "disabled");
+    title.innerHTML = `O pokemon é o ${pokedata.names}     `;
+  }
+}
+
+let x = window.matchMedia("(orientation: portrait)");
+
+x.addListener(mediaQuery);
+
 getPoke();
+mediaQuery(x);
