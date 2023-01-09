@@ -236,7 +236,7 @@ input:focus::placeholder {
     background-image: url("assets/bgphone.jpg");
     margin-top: 100px;
     height: auto;
-    background-size: auto;
+    background-size: 500px 900px;
   }
 
   #box {
