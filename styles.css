@@ -248,7 +248,7 @@ input:focus::placeholder {
   #poke {
     width: 180px;
     height: 180px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 10px;
   }
 
@@ -257,7 +257,8 @@ input:focus::placeholder {
     width: auto;
     line-height: 45px;
     margin-right: 20px;
-    z-index: 60000;
+    margin-bottom: 1rem;
+    z-index: 1;
     position: relative;
   }
 
@@ -272,7 +273,7 @@ input:focus::placeholder {
     height: auto;
     margin-left: 130px;
     padding-left: 0;
-    bottom: 50px;
+    bottom: 70%;
   }
 
   #erro {
