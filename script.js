@@ -85,6 +85,7 @@ const pokeCheck = () => {
       vitorias = 0;
       contador.innerHTML = vitorias;
       contador.style.cssText = "right: 33%";
+     
     }
   }
 };
@@ -136,6 +137,7 @@ const getPoke = async () => {
   pokephoto.src = pokedata.sprites;
   pokephoto.style.cssText = "filter: brightness(0)";
   document.getElementById("palpite").removeAttribute("disabled");
+  document.getElementById("palpite").focus()
 };
 
 document.getElementById("palpite").addEventListener("keydown", (event) => {
@@ -188,7 +190,9 @@ function mediaInstruction(x = window.matchMedia("(orientation: portrait)")) {
     ).textContent = `As instruções do jogo são simples: Você terá 6 chances, após o primeiro erro receberá uma dica a cada nova tentativa. Se a resposta estiver correta, o contador de vitória aumentará, caso contrário ele irá resetar. Para visualizar as dicas, clique na pokebola. Bom jogo!`;
     document.getElementById("fundo").addEventListener("click", () => {
       document.getElementById("fundo").style.cssText = "display: none";
+      document.getElementById("palpite").focus()
     });
+    
   }
 }
 

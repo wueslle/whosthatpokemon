@@ -306,6 +306,9 @@ input:focus::placeholder {
     margin-right: 30px;
   }
 
+  input[type=text] {
+    height: 50px; }
+
   #vitorias {
     position: -ms-page;
     margin-top: 200px;
