@@ -231,6 +231,8 @@ input:focus::placeholder {
   body {
     padding: 0px 0px -30px 0px;
     background-image: url("assets/background.png");
+    object-fit: cover;
+    height: 720px;
   }
 
   #bg {
@@ -270,7 +272,7 @@ input:focus::placeholder {
     height: auto;
     margin-left: 130px;
     padding-left: 0;
-    bottom: -5px;
+    bottom: 50px;
   }
 
   #erro {
