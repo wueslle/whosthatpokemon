@@ -68,6 +68,7 @@ const pokeCheck = () => {
       pokedata.names.charAt(0).toUpperCase() + pokedata.names.slice(1)
     }!`;
     mediaQuery();
+    document.getElementById("palpite").setAttribute("disabled", "disabled");
   } else {
     tentativas++;
     pokeErro();
