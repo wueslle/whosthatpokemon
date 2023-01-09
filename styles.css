@@ -271,12 +271,11 @@ input:focus::placeholder {
   }
 
   #palpites {
-    position: fixed;
-    width: 210px;
+    position: initial;
     height: auto;
-    margin-left: 130px;
-    padding-left: 0;
-    bottom: 70%;
+    margin-left: -30px;
+    margin-top: 19rem;
+    padding-left: -5px;
   }
 
   #erro {
@@ -302,6 +301,7 @@ input:focus::placeholder {
     margin-top: 200px;
     width: auto;
     height: auto;
+    z-index: 5555;
   }
 
   #winimg {
@@ -311,5 +311,12 @@ input:focus::placeholder {
 
   #modal {
     display: none;
+  }
+
+  #contador {
+    position: relative;
+    top: -222px;
+    left: 300px;
+    font-size: 40px;
   }
 }

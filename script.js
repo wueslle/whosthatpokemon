@@ -57,17 +57,17 @@ const pokeCheck = () => {
   if (inputValue.toLowerCase() === pokedata.names) {
     pokephoto.style.cssText = "filter: brightness(1)";
     document.getElementById("botao-text").innerHTML = "Continuar";
-    activateButton();
+
     vitorias++;
     contador.innerHTML = vitorias;
     if (vitorias > 9) {
       contador.style.cssText = "right: 20%";
     }
-    document.getElementById("palpite").setAttribute("disabled", "disabled");
     title.innerHTML = `É o ${
       pokedata.names.charAt(0).toUpperCase() + pokedata.names.slice(1)
     }!`;
     mediaQuery();
+    activateButton();
     document.getElementById("palpite").setAttribute("disabled", "disabled");
   } else {
     tentativas++;
