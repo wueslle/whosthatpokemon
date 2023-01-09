@@ -9,12 +9,13 @@ body {
   background-color: rgb(20, 20, 20);
   background-image: url("assets/bg.webp");
   background-size: cover;
+  margin-top: -130px;
 }
 main {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 10% 17% 0 10%
+  padding: 10% 17% 0 10%;
 }
 
 #box {
@@ -233,8 +234,9 @@ input:focus::placeholder {
   body {
     padding: 0px 0px 0px 0px;
     background-image: url("assets/bgphone.jpg");
-    object-fit: cover;
+
     height: auto;
+    background-size: cover;
   }
 
   #box {
@@ -244,8 +246,6 @@ input:focus::placeholder {
     width: 300px;
     height: 500px;
     left: 15%;
-   
-
   }
   #bg {
     object-fit: cover;
@@ -283,9 +283,9 @@ input:focus::placeholder {
   #palpites {
     height: auto;
     width: 350px;
-   margin-top: 15px;
-   left: -13px;
-   z-index: 2;
+    margin-top: 15px;
+    left: -13px;
+    z-index: 2;
   }
 
   #erro {
@@ -300,14 +300,16 @@ input:focus::placeholder {
     margin-bottom: 0px;
     z-index: 100;
     background: white;
+    font-size: 30px;
   }
   #palpite::placeholder {
-    font-size: 1em;
+    font-size: 1rem;
     margin-right: 30px;
   }
 
-  input[type=text] {
-    height: 50px; }
+  input[type="text"] {
+    height: 50px;
+  }
 
   #vitorias {
     position: -ms-page;
@@ -340,7 +342,6 @@ input:focus::placeholder {
     font-size: 50px;
     text-align: center;
   }
-  
 
   #contador {
     position: relative;
@@ -349,12 +350,12 @@ input:focus::placeholder {
     left: 92px;
   }
 
-  .button{
+  .button {
     opacity: 1;
-    pointer-events: none; 
-    padding: 8px 20px 22px 50px; 
-    width: 112.625px; 
-    font-size: 15px; 
+    pointer-events: none;
+    padding: 8px 20px 22px 50px;
+    width: 112.625px;
+    font-size: 15px;
     background-color: rgb(219, 47, 44);
   }
 }
