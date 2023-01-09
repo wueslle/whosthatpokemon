@@ -240,7 +240,7 @@ input:focus::placeholder {
   #box {
     margin-top: 40px;
     position: fixed;
-    top: 14%;
+    top: 34px;
     width: 300px;
     height: 500px;
     left: 15%;
@@ -340,9 +340,9 @@ input:focus::placeholder {
 
   #contador {
     position: relative;
-    top: -197px;
+    top: -289px;
     font-size: 40px;
-    left: 63px;
+    left: 92px;
   }
 
   .button{

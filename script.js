@@ -182,7 +182,7 @@ function mediaInstruction(x = window.matchMedia("(orientation: portrait)")) {
   if (x.matches) {
     document.getElementById("fundo").style.cssText = "display: block";
     document.getElementById("modal").style.cssText =
-    "position: absolute; border-radius: 40px; top: 20%; left: 10%; width: 270px; height: auto; z-index: 4000; background-color: var(--pokeblue); border: 5px solid var(--pokered); cursor: default; font-family: sans-serif; color: var(--pokeyellow); -webkit-text-stroke: 1px var(--pokeye); font-size: 27px; text-align: center; padding: 30px; font-weight: lighter; opacity: 0.8;"
+    "position: absolute; border-radius: 40px; top: 20%; left: 10%; width: 270px; height: auto; z-index: 4000; background-color: var(--pokeblue); border: 5px solid var(--pokered); cursor: default; font-family: sans-serif; color: var(--pokeyellow); -webkit-text-stroke: 1px var(--pokeye); font-size: 27px; text-align: center; padding: 10px; font-weight: lighter; opacity: 0.8;"
     document.getElementById(
       "modal"
     ).textContent = `As instruções do jogo são simples: Você terá 6 chances, após o primeiro erro receberá uma dica a cada nova tentativa. Se a resposta estiver correta, o contador de vitória aumentará, caso contrário ele irá resetar. Para visualizar as dicas, clique na pokebola. Bom jogo!`;
