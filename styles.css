@@ -231,10 +231,10 @@ input:focus::placeholder {
 
 @media all and (orientation: portrait) {
   body {
-    padding: 0px 0px -30px 0px;
-    background-image: url("assets/background.png");
+    padding: 0px 0px 0px 0px;
+    background-image: url("assets/bgphone.jpg");
     object-fit: cover;
-    height: 720px;
+    height: auto;
   }
 
   #box {
@@ -340,8 +340,9 @@ input:focus::placeholder {
 
   #contador {
     position: relative;
-    top: -160px;
+    top: -197px;
     font-size: 40px;
+    left: 63px;
   }
 
   .button{
