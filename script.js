@@ -167,7 +167,7 @@ document.getElementById("poke").oncontextmenu = function () {
 const instrucao = () => {
   document.getElementById("fundo").style.cssText = "display: block";
   document.getElementById("modal").style.cssText =
-    "position: absolute; border-radius: 40px; top: 19%; left: 33%; width: 15em; height: 10em;z-index: 4000; background-color: var(--pokeblue); opacity: 1; border: 5px solid var(--pokered);cursor: default;font-family: sans-serif; color: var(--pokeyellow); -webkit-text-stroke: 1px var(--pokeye); font-size: 32px;text-align: center;padding: 10px 10px 10px 10px;font-weight: lighter;opacity: 0.8;";
+  "position: absolute; border-radius: 40px; top: 12%; left: 33%; width: 15em; height: auto; z-index: 4000; background-color: var(--pokeblue); border: 5px solid var(--pokered); cursor: default; color: var(--pokeyellow); -webkit-text-stroke: 1px var(--pokeye); font-size: 3vh; text-align: center; padding: 30px; font-weight: lighter; opacity: 0.8;"
     mediaInstruction()
     document.getElementById(
     "modal"
