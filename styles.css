@@ -19,7 +19,7 @@ main {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 10% 17% 0 10%
+  padding: 10% 17% 0 10%;
 }
 
 #box {
@@ -240,8 +240,9 @@ input:focus::placeholder {
   body {
     padding: 0px 0px 0px 0px;
     background-image: url("assets/bgphone.jpg");
-    object-fit: cover;
+    margin-top: 100px;
     height: auto;
+    background-size: 500px 900px;
   }
 
   #box {
@@ -249,10 +250,8 @@ input:focus::placeholder {
     position: fixed;
     top: 34px;
     width: 300px;
-    height: 500px;
+    height: 622px;
     left: 15%;
-   
-
   }
   #bg {
     object-fit: cover;
@@ -290,9 +289,9 @@ input:focus::placeholder {
   #palpites {
     height: auto;
     width: 350px;
-   margin-top: 15px;
-   left: -13px;
-   z-index: 2;
+    margin-top: 123px;
+    left: -13px;
+    z-index: 2;
   }
 
   #erro {
@@ -305,19 +304,23 @@ input:focus::placeholder {
     padding-bottom: 15px;
     padding-top: 15px;
     margin-bottom: 0px;
-    z-index: 100;
     background: white;
+    font-size: 30px;
+    border-top: 5px var(--pokeblue);
   }
   #palpite::placeholder {
-    font-size: 1em;
-    margin-right: 30px;
+    font-size: 14px;
+    margin-right: 15px;
   }
 
-  input[type=text] {
-    height: 50px; }
+  input[type="text"] {
+    height: 50px;
+  }
 
   #vitorias {
-    position: -ms-page;
+    position: relative;
+    top: -78px;
+    right: -23px;
     margin-top: 200px;
     width: auto;
     height: auto;
@@ -325,7 +328,7 @@ input:focus::placeholder {
   }
 
   #winimg {
-    width: 150px;
+    width: 10px;
     opacity: 0;
   }
 
@@ -347,21 +350,20 @@ input:focus::placeholder {
     font-size: 50px;
     text-align: center;
   }
-  
 
   #contador {
     position: relative;
-    top: -289px;
+    top: -138px;
     font-size: 40px;
     left: 92px;
   }
 
-  .button{
+  .button {
     opacity: 1;
-    pointer-events: none; 
-    padding: 8px 20px 22px 50px; 
-    width: 112.625px; 
-    font-size: 15px; 
+    pointer-events: none;
+    padding: 8px 20px 22px 50px;
+    width: 112.625px;
+    font-size: 15px;
     background-color: rgb(219, 47, 44);
   }
 }
