@@ -130,7 +130,7 @@ const limpaErro = () => {
     erros.removeChild(erros.firstChild);
   }
 };
-const random = () => Math.floor(Math.random() * 251 + 1);
+const random = () => Math.floor(Math.random() * 1025 + 1);
 const getPoke = async () => {
   const id = random();
   pokedata = await pokecall(id);
